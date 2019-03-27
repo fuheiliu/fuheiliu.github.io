@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN // 这里设置语言 简体中文">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="欢迎使用Panda-Learning 中文名即熊猫学习熊猫学习Panda-Learning是一个辅助学习强国的程序,帮助挤不出时间，却仍然需要学习的积极分子，熊猫学习强国(xuexiqiangguo) 觉得好用请点击右上star一下。 使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com 跟新说明更新记得同步你的user文件信息，不然会学习重复文章视频 2019.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Panda-Learning 熊猫学习">
+<meta property="og:url" content="http://fuheiliu.github.io/2019/03/19/Panda-Learning1/index.html">
+<meta property="og:site_name" content="Fuheiliu">
+<meta property="og:description" content="欢迎使用Panda-Learning 中文名即熊猫学习熊猫学习Panda-Learning是一个辅助学习强国的程序,帮助挤不出时间，却仍然需要学习的积极分子，熊猫学习强国(xuexiqiangguo) 觉得好用请点击右上star一下。 使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com 跟新说明更新记得同步你的user文件信息，不然会学习重复文章视频 2019.">
+<meta property="og:locale" content="zh-CN // 这里设置语言 简体中文">
+<meta property="og:updated_time" content="2019-03-19T00:21:02.990Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Panda-Learning 熊猫学习">
+<meta name="twitter:description" content="欢迎使用Panda-Learning 中文名即熊猫学习熊猫学习Panda-Learning是一个辅助学习强国的程序,帮助挤不出时间，却仍然需要学习的积极分子，熊猫学习强国(xuexiqiangguo) 觉得好用请点击右上star一下。 使用异常或者有更好的建议请联系邮箱 mypandalearning@gmail.com 跟新说明更新记得同步你的user文件信息，不然会学习重复文章视频 2019.">
+
+
+
+
+
+
+  <link rel="canonical" href="http://fuheiliu.github.io/2019/03/19/Panda-Learning1/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Panda-Learning 熊猫学习 | Fuheiliu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN // 这里设置语言 简体中文">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Fuheiliu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay Hungry, Stay Foolish</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Beranda</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Arsip</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://fuheiliu.github.io/2019/03/19/Panda-Learning1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Fuheiliu">
+      <meta itemprop="description" content="Fuheiliu个人站，主要涉及前端知识共享、实践教程、前沿技术共同学习等方面">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fuheiliu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Panda-Learning 熊猫学习
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Diposting di</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2019-03-19 08:15:00 / Updated at: 08:21:02" itemprop="dateCreated datePublished" datetime="2019-03-19T08:15:00+08:00">2019-03-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="欢迎使用Panda-Learning-中文名即熊猫学习"><a href="#欢迎使用Panda-Learning-中文名即熊猫学习" class="headerlink" title="欢迎使用Panda-Learning 中文名即熊猫学习"></a>欢迎使用Panda-Learning 中文名即熊猫学习</h2><p>熊猫学习Panda-Learning是一个辅助学习强国的程序,帮助挤不出时间，却仍然需要学习的积极分子，熊猫学习强国(xuexiqiangguo)</p>
+<p>觉得好用请点击右上star一下。</p>
+<p>使用异常或者有更好的建议请联系邮箱 <a href="mailto:mypandalearning@gmail.com" target="_blank" rel="noopener">mypandalearning@gmail.com</a></p>
+<h2 id="跟新说明"><a href="#跟新说明" class="headerlink" title="跟新说明"></a>跟新说明</h2><h3 id="更新记得同步你的user文件信息，不然会学习重复文章视频"><a href="#更新记得同步你的user文件信息，不然会学习重复文章视频" class="headerlink" title="更新记得同步你的user文件信息，不然会学习重复文章视频"></a>更新记得同步你的user文件信息，不然会学习重复文章视频</h3><ul>
+<li>2019.03.16<ul>
+<li>增加账号登陆，可以卸载手机app了。</li>
+<li>改为后台学习，登陆后自动关闭浏览器。</li>
+<li>不保存用户信息，防止不法分子商用，需要用户每天登陆</li>
+</ul>
+</li>
+<li>2019.03.15 <ul>
+<li>修复win7 32位系统不能使用问题</li>
+<li>增加mac os系统支持，请仔细阅读使用说明。</li>
+</ul>
+</li>
+<li>2019.03.14 <ul>
+<li>加入活跃时间判断，优化用户自行学完文章篇书却没有学习时长等极端情况。</li>
+<li>开放python源码，可以自行在各平台使用，请勿商用，转发请注明出处</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://raw.githubusercontent.com/Alivon/Panda-Learning/master/pandalearn.py" target="_blank" rel="noopener">源码下载</a></p>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><strong>下载地址</strong></h2><p><a href="https://github.com/Alivon/Panda-Learning/archive/master.zip" target="_blank" rel="noopener">windows版本</a></p>
+<p><a href="https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/pandalearning-mac.zip" target="_blank" rel="noopener">macos版本</a></p>
+<p><a href="https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg" target="_blank" rel="noopener">macos浏览器</a>（10.10以上版本）</p>
+<p><a href="https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/pandalearning-linux.zip?raw=true" target="_blank" rel="noopener">linux桌面版</a>  linux需要安装chrome浏览器下载链接</p>
+<p><a href="https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_x86_64.rpm?raw=true" target="_blank" rel="noopener">linux浏览器下载rpm（适用于 Fedora/openSUSE)</a></p>
+<p><a href="https://github.com/Alivon/Panda-Learning/blob/linux/pandalearning-linux/google-chrome-stable_current_amd64.deb?raw=true" target="_blank" rel="noopener"> linux浏览器下载deb（适用于 Debian/Ubuntu）</a></p>
+<p><strong>关于下载缓慢问题可以尝试用迅雷等工具下载</strong></p>
+<h2 id="程序特性"><a href="#程序特性" class="headerlink" title="程序特性"></a>程序特性</h2><p>支持WIN7和WIN10，mac os ，linux操作系统</p>
+<p>支持多用户同时使用，</p>
+<p>支持钉钉账号密码登陆</p>
+<p>多线程学习，大大缩减学习时间，活跃时间学满只需25min</p>
+<p>解决重复文章不加分问题，正确使用每天都能学满31分</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><ul>
+<li>请解压后点击 <code>pandalearn</code> 来启动程序。</li>
+<li>开启后根据提示中输入用户名可以输入任何<strong><em>英文/中文/数字</em></strong>组成的用户名，作用是保存学习历史纪录以及多开程序区分用户，防止学习重复文章视频，每次开启程序需要输入你的用户名读取记录以便学满31分。</li>
+<li>第一次登陆需要扫描二维码登陆学习强国，再次使用6小时之内会免登陆。</li>
+<li>打开的chrome浏览器窗口中的程序自动完成“学习”，你可以用这台电脑做其他事情，但不能 最小化 或 关闭 学习窗口。</li>
+<li>第一次使用后程序会自动生成 <code>user</code>文件夹，里面包含你的学习历史纪录，当学习文章篇数和视频数出现不加分情况，多半是你变更了用户名，解决办法为进入<code>user</code>文件夹下你<code>用户名</code>文件夹下的<code>log.txt</code>文件，修改上面的数字，例如是0的时候可以改成20，12的时候改为30，就是根据上面的数字增加20~30，修改后仍为一个数样式如下<code>36</code></li>
+</ul>
+<h4 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h4><ul>
+<li><p>mac os需要先安装chrome浏览器</p>
+<p>浏览器下载地址 <a href="https://www.google.com/intl/zh-CN_ALL/chrome/" target="_blank" rel="noopener">官网</a>   <a href="https://github.com/Alivon/Panda-Learning/raw/mac/pandalearning-mac/googlechrome.dmg" target="_blank" rel="noopener">镜像</a>(不能翻墙的下载)</p>
+</li>
+<li><p>直接双击程序会出错！！</p>
+</li>
+<li><p>解压文件，用终端进入该位置  <code>yournameMac:pandalearning-mac yourname$</code></p>
+</li>
+<li><p>输入 <code>./pandalearn</code>  执行程序</p>
+</li>
+<li><p>其他同windows</p>
+</li>
+</ul>
+<h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><ul>
+<li>必须先安装chrome浏览器</li>
+<li>双击执行</li>
+<li>其他同windows</li>
+</ul>
+<h2 id="win下报错解决办法"><a href="#win下报错解决办法" class="headerlink" title="win下报错解决办法"></a>win下报错解决办法</h2><p>windous有可能提示<code>无法定位程序输入点ucrtbase.terminate于动态链接库api-ms-win-crt-runtime-|1-1-0.dll</code>等缺失dll文件的问题而无法使用，尝试安装<code>Visual C++ Redistributable for Visual Studio 2015</code>该程序包含在<code>不能运行时安装</code>的目录中</p>
+<p>根据你的操作系统32/64选择x86/x64版本vc_redist安装，即可解决不能使用问题。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Daftar Isi
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Ikhtisar
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Fuheiliu</p>
+              <div class="site-description motion-element" itemprop="description">Fuheiliu个人站，主要涉及前端知识共享、实践教程、前沿技术共同学习等方面</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">posting</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#欢迎使用Panda-Learning-中文名即熊猫学习"><span class="nav-number">1.</span> <span class="nav-text">欢迎使用Panda-Learning 中文名即熊猫学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跟新说明"><span class="nav-number">2.</span> <span class="nav-text">跟新说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更新记得同步你的user文件信息，不然会学习重复文章视频"><span class="nav-number">2.1.</span> <span class="nav-text">更新记得同步你的user文件信息，不然会学习重复文章视频</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载地址"><span class="nav-number">3.</span> <span class="nav-text">下载地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序特性"><span class="nav-number">4.</span> <span class="nav-text">程序特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法"><span class="nav-number">5.</span> <span class="nav-text">使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows"><span class="nav-number">5.0.1.</span> <span class="nav-text">Windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mac"><span class="nav-number">5.0.2.</span> <span class="nav-text">Mac</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux"><span class="nav-number">5.0.3.</span> <span class="nav-text">Linux</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#win下报错解决办法"><span class="nav-number">6.</span> <span class="nav-text">win下报错解决办法</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Fuheiliu</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Tema – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
